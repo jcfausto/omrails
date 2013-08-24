@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Omrails</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>One Month Rails Sample Application by Julio Cesar Fausto</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
 
-<%= yield %>
+	<%= render 'layouts/header' %>
 
-</body>
+	<%= yield %>
+
+	<div class="footer">
+		<small>
+			One Month Rails Samplo Application by <%= link_to "Julio Cesar Fausto", "http://jcfausto.com" %>
+		</small>
+	</div>
+
+	</body>
 </html>
