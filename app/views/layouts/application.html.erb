@@ -8,15 +8,14 @@
 	</head>
 	<body>
 
-	<%= render 'layouts/header' %>
+		<%= render 'layouts/header' %>
 
-	<%= yield %>
+		<div class="container">
 
-	<div class="footer">
-		<small>
-			One Month Rails Samplo Application by <%= link_to "Julio Cesar Fausto", "http://jcfausto.com" %>
-		</small>
-	</div>
+			<%= yield %>
+			<%= render 'layouts/footer' %>
+
+		</div>
 
 	</body>
 </html>
