@@ -1,4 +1,6 @@
 Omrails::Application.routes.draw do
+  devise_for :users
+
   get 'about' => 'pages#about'
   
   # You can have the root of your site routed with "root"

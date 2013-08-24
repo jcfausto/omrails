@@ -12,11 +12,18 @@
 		<%= render 'layouts/header' %>
 
 		<div class="container">
+       		<!-- This are the tags recomended by devise.
+       		<p class="notice"><%= notice %></p>
+       		<p class="alert"><%= alert %></p> -->
+
+		    <!-- This are the Mattan implementation for flash messages -->
+       		<% flash.each do |name, msg| %>
+       		  <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+       		<% end %>
 
 			<%= yield %>
 			<%= render 'layouts/footer' %>
 
 		</div>
-
 	</body>
 </html>
