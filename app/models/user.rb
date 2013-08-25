@@ -10,6 +10,6 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   #all users mut have names
-  #validates_presence_of :name
+  validates_presence_of :name
   
 end
