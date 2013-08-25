@@ -3,4 +3,9 @@ class Pin < ActiveRecord::Base
 
   #must have a description
   validates :description, presence: true, length: { maximum: 120 }
+
+  #relationship between user and pin
+  belongs_to :user
+
+  validates :user_id, presence: true
 end

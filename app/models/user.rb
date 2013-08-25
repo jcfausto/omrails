@@ -11,5 +11,7 @@ class User < ActiveRecord::Base
 
   #all users mut have names
   validates_presence_of :name
-  
+
+  #relationship with user
+  has_many :pins
 end
