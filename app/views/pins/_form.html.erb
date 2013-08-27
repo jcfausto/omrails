@@ -1,6 +1,7 @@
 <%= simple_form_for(@pin, html: { class: "form-horizontal"} ) do |f| %>
   <%= f.error_notification %>
 
+  <%= f.input :image, label: "Upload An Image" %>
   <%= f.input :description, as: :text, :autofocus => true, input_html: { rows: "3" } %>
 
   <div class="form-actions">

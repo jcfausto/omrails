@@ -19,3 +19,7 @@ doc/
 *.project
 .DS_Store
 .idea
+
+#ignore paperclip uploaded files
+/public/system
+/public/img_to_pin
