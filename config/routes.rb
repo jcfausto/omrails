@@ -1,8 +1,15 @@
 Omrails::Application.routes.draw do
+  get "users/show"
+
   resources :pins
 
 
   devise_for :users
+  #it's important to be right about devise :users in order to 
+  #not conflict routes. If this route is above the devise :users
+  #in this url "users/edit", the "edit" part will be interpreted as the :id
+  #returning a "not found user with id=edit"!
+  match 'users/:id' => 'users#show', as: :user
 
   get 'about' => 'pages#about'
   
