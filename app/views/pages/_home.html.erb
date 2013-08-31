@@ -1,6 +1,4 @@
-<% if user_signed_in? %>
-	#show something. Members area.
-<% else %>
+<% unless user_signed_in? %>
 	<div class="hero-unit">
 		<h1>Welcome to One Month Rails!</h1>
 		<p>
