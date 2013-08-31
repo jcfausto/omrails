@@ -22,4 +22,4 @@ doc/
 
 #ignore paperclip uploaded files
 /public/system
-/public/img_to_pin
+/public/sampleimages
