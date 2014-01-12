@@ -37,5 +37,9 @@ Omrails::Application.configure do
 
   #devise configs
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  #facebook login/sign in environment variables
+  ENV['FACEBOOK_APP_ID'] = "";
+  ENV['FACEBOOK_SECRET'] = "";
   
 end

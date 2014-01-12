@@ -9,6 +9,7 @@ gem "aws-sdk"
 gem "faker"
 gem "will_paginate"
 gem "bootstrap-will_paginate"
+gem "omniauth-facebook"
 
 group :production do
   gem 'pg'

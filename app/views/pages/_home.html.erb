@@ -8,7 +8,9 @@
 		</p>
 
 		<p>
-			<%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-large" %>
+			<%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-success btn-large" %>
+		
+		<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: "btn btn-primary btn-large" %>
 		</p>
 	</div>
 <% end %>
