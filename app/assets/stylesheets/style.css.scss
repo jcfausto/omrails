@@ -5,23 +5,35 @@ $baseFontFamily: Oxygen;
 /* this will turn the nav bar into one color fixed */
 $navbarBackgroundHightlight: white;
 $navbarBackground: white;
-
 $btnSuccessBackground: green;
-
 
 @import 'bootstrap';
 
 body {
   padding-top: 60px;	
+	margin: 0;
+	/* padding: 0; */
+	color: #3e3e3e;
+	background: transparent;
+	min-height: 100%;
+	min-width: 940px;
+}
+
+/* dá um aspecto bem melhor para a fonte */
+html {
+	-webkit-font-smoothing: antialiased;
 }
 
 @import 'bootstrap-responsive';
 
-/* This will remove tha shadow below the navbar */
-/* .navbar-inner {
-	@include box-shadow(none !important);
-	border: 0;
-} */
+.hero-unit {
+	margin-top: 15px;
+	background: #fff;
+}
+
+.alert {
+	margin-top: 15px;
+}
 
 .footer {
 	margin-top: 50px;
@@ -56,4 +68,81 @@ body {
 
 .description {
 	margin: 10px 0 5px;
+}
+
+/* botoes customizados */
+.btn-omrails-green {
+	background: #7EB348;
+	background-image: none;
+	border:none;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 600;
+	text-decoration: none ! important;
+	text-shadow: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out 0s;		
+	-webkit-transition: all 0.3s ease-in-out 0s;		
+}
+
+
+.btn-omrails-blue {
+	background: #344e86;
+	background-image: none;
+	border:none;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 600;
+	text-decoration: none ! important;
+	text-shadow: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out 0s;		
+	-webkit-transition: all 0.3s ease-in-out 0s;		
+}
+
+.btn-omrails-green:hover, .btn-omrails-blue:hover {
+	background: #333;
+	color: #fff;
+}
+
+/* custom navbar */
+/* This will remove tha shadow below the navbar */
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+	background: #36a5d3;
+}
+
+.navbar .brand {
+	padding: 18px 20px 10px;
+	text-shadow: none;
+	color: #fff;
+}
+
+.navbar-inner .nav li a {
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-shadow: none;
+	background: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: background 0.1s linear,opacity 0.1s linear;
+	-moz-transition: background 0.1s linear,opacity 0.1s linear;
+	-ms-transition: background 0.1s linear,opacity 0.1s linear;
+	-o-transition: background 0.1s linear,opacity 0.1s linear;
+	transition: background 0.1s linear,opacity 0.1s linear;
+	-webkit-font-smoothing: antialiased;			
+	opacity: .9;
+	font-weight: 600;
+}
+
+.navbar-inner .nav li a:hover {
+	background: #0c618f;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+	opacity: 1;
 }
