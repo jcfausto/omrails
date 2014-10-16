@@ -41,5 +41,9 @@ Omrails::Application.configure do
   #facebook login/sign in environment variables
   ENV['FACEBOOK_APP_ID'] = "";
   ENV['FACEBOOK_SECRET'] = "";
+  ENV['GA-UA'] = ""
+
+  #configuring 'google-analytics-rails' gem 
+  GA.tracker = ENV['GA-UA']
   
 end

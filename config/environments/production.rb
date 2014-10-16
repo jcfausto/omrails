@@ -77,4 +77,8 @@ Omrails::Application.configure do
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
+
+  #configuring 'google-analytics-rails' gem 
+  GA.tracker = ENV['GA-UA']
+
 end

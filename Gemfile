@@ -10,6 +10,7 @@ gem "faker"
 gem "will_paginate"
 gem "bootstrap-will_paginate"
 gem "omniauth-facebook"
+gem "google-analytics-rails"
 
 group :production do
   gem 'pg'
